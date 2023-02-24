@@ -1,0 +1,72 @@
+<mvc:View
+	controllerName="josecarlosgz.html5module.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns="sap.m"
+>
+	<App id="app">
+		<pages>
+			<Page
+				id="page"
+				title="{i18n>title}"
+			>
+				<content>
+					<IconTabBar
+						id="idIconTabBar"
+						select="onIconTabBarPress"
+						class="sapUiResponsiveContentPadding"
+					>
+						<items>
+							<IconTabFilter
+								key="key_Tab_01"
+								text="IconTabFilter_01"
+								count="34.45"
+								showAll="true"
+							>
+								<VBox>
+									<Text
+										text="Estas en el IconTabFilter_01"
+										class="sapUiLargeMargin"
+									/>
+									<Button
+										type="Emphasized"
+										text="navTo Tab_03"
+										class="sapUiLargeMarginBegin"
+										press=".onNavTo"
+									/>
+								</VBox>
+							</IconTabFilter>
+							<IconTabSeparator/>
+							<IconTabFilter
+								key="key_Tab_02"
+								text="IconTabFilter_02"
+								count="456"
+								icon="sap-icon://begin"
+								iconColor="Positive"
+								nota_showAll="hace que se muestre sólo el texto del IconTabFilter y no el icono. Si el text es largo lo muestra igualmente"
+								showAll="true"
+							>
+								<Text text=""/>
+								<Text
+									text="Estas en el IconTabFilter_02"
+									class="sapUiLargeMargin"
+								/>
+							</IconTabFilter>
+							<IconTabFilter
+								key="key_Tab_03"
+								text="IconTabFilter_03"
+								icon="sap-icon://compare"
+								iconColor="Critical"
+							>
+								<Text
+									text="Estas en el IconTabFilter_03"
+									class="sapUiLargeMargin"
+								/>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
