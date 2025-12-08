@@ -94,7 +94,7 @@ La aplicación demuestra dos métodos de navegación entre pestañas:
 
 Cuando el usuario selecciona una pestaña:
 1. Se captura el evento mediante `onIconTabBarPress`
-2. Se obtiene la clave (`key`) de la pestaña seleccionada
+2. Se obtiene la clave (`key`) de la pestaña seleccionada usando `oEvent.getParameter("key")`
 3. Se identifica la pestaña mediante un `switch` statement
 4. Se muestra un `MessageToast` con el nombre de la pestaña seleccionada
 
@@ -103,12 +103,12 @@ Cuando el usuario selecciona una pestaña:
 **Mock de Eventos**
 ```javascript
 var oEventMock = { 
-    getParameter: function () { return "key_Tab_03"; }
+    getParameter: function () { return "supuesto KEY del tab presionado"; }
 };
 this.onIconTabBarPress(oEventMock);
 ```
 
-Este patrón demuestra cómo simular eventos de UI5 para pruebas o navegación programática.
+Este patrón demuestra cómo simular eventos de UI5 para pruebas o navegación programática. El objeto mock implementa el método `getParameter()` que devuelve el valor esperado por el handler del evento.
 
 **Separador Visual**
 El componente `IconTabSeparator` se utiliza para separar visualmente grupos de pestañas.
