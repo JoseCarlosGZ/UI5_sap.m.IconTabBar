@@ -1,6 +1,6 @@
 # UI5 IconTabBar Demo Application
 
-![Application Screenshot](https://github.com/user-attachments/assets/1228664d-ebec-4c60-8014-ea960248c301)
+![Application Screenshot](images/sc.png)
 
 ## Descripción General
 
